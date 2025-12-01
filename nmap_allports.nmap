@@ -1,0 +1,11 @@
+# Nmap 7.95 scan initiated Mon Dec  1 02:02:07 2025 as: /usr/lib/nmap/nmap --privileged -p- -T4 -oA nmap_allports www.goodshopping.com
+Nmap scan report for www.goodshopping.com (15.197.148.33)
+Host is up (0.0021s latency).
+Other addresses for www.goodshopping.com (not scanned): 3.33.130.190
+rDNS record for 15.197.148.33: a2aa9ff50de748dbe.awsglobalaccelerator.com
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+# Nmap done at Mon Dec  1 02:04:32 2025 -- 1 IP address (1 host up) scanned in 145.49 seconds

@@ -1,0 +1,1394 @@
+Script started on 2025-12-01 01:44:20-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="28"]
+                                                                             ]0;kali@kali: ~/goodshopping_enumeration[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hhost www.goodshopping.com
+[K[A[4C[36mh[36mo[36ms[36mt[39m[1B[K[?1l>[?2004l
+www.goodshopping.com is an alias for goodshopping.com.
+goodshopping.com has address 3.33.130.190
+goodshopping.com has address 15.197.148.33
+goodshopping.com mail is handled by 10 mailstore1.secureserver.net.
+goodshopping.com mail is handled by 0 smtp.secureserver.net.
+                                                                             ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hh[4mh[24m[4mh[24m[38;5;244most www.goodshopping.com[39m
+[K[A[5C[4mh[39m[4mo[24m[1B[K[A[6C[4mh[4mo[39m[4ms[24m[4ms[39m[4mt[24m[24m[36mh[24m[36mo[24m[36ms[24m[36mt[39m[36mt[36m [39m[36mt[39m[39m [39m-[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [1B[K[A[10C[32m-[39m[32m-[32mt[39m[32mt[32m [39m[32mt[39m[39m ns goodshopping.com[?1l>[?2004l[1Bgoodshopping.com name server ns13.domaincontrol.com.
+goodshopping.com name server ns14.domaincontrol.com.
+                                                                             ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hnmap -sS -Pn -T4 -oA nmap_basic www.goodshopping.com
+[K[A[4C[36mn[36mm[36ma[36mp[39m [32m-[32ms[32mS[39m [32m-[32mP[32mn[39m [32m-[32mT[32m4[39m [32m-[32mo[32mA[39m[1B[K[?1l>[?2004l
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-01 01:53 EST
+Nmap scan report for www.goodshopping.com (3.33.130.190)
+Host is up (0.010s latency).
+Other addresses for www.goodshopping.com (not scanned): 15.197.148.33
+rDNS record for 3.33.130.190: a2aa9ff50de748dbe.awsglobalaccelerator.com
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+81/tcp  open  hosts2-ns
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 10.49 seconds
+                                                                             ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hnmap -sV -sC -T4 -oA nmap_service www.goodshopping.com
+[K[A[4C[36mn[36mm[36ma[36mp[39m [32m-[32ms[32mV[39m [32m-[32ms[32mC[39m [32m-[32mT[32m4[39m [32m-[32mo[32mA[39m[1B[K[?1l>[?2004l
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-01 02:00 EST
+Nmap scan report for www.goodshopping.com (15.197.148.33)
+Host is up (0.0031s latency).
+Other addresses for www.goodshopping.com (not scanned): 3.33.130.190
+rDNS record for 15.197.148.33: a2aa9ff50de748dbe.awsglobalaccelerator.com
+Not shown: 997 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+81/tcp  open  tcpwrapped
+443/tcp open  tcpwrapped
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 40.36 seconds
+                                                                             ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hnmap -p- -T4 -oA nmap_allports www.goodshopping.com
+[K[A[4C[36mn[36mm[36ma[36mp[39m [32m-[32mp[32m-[39m [32m-[32mT[32m4[39m [32m-[32mo[32mA[39m[1B[K[?1l>[?2004l
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-01 02:02 EST
+Nmap scan report for www.goodshopping.com (15.197.148.33)
+Host is up (0.0021s latency).
+Other addresses for www.goodshopping.com (not scanned): 3.33.130.190
+rDNS record for 15.197.148.33: a2aa9ff50de748dbe.awsglobalaccelerator.com
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 145.49 seconds
+                                                                             ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hnmap --script vuln -oA nmap_vuln www.goodshopping.com
+[K[A[4C[36mn[36mm[36ma[36mp[39m [32m-[32m-[32ms[32mc[32mr[32mi[32mp[32mt[39m[6C[32m-[32mo[32mA[39m[1B[K[?1l>[?2004l
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-01 02:04 EST
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Stats: 0:05:03 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:09 (0:00:01 remaining)
+Stats: 0:05:04 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:09 (0:00:01 remaining)
+Stats: 0:05:05 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:09 (0:00:01 remaining)
+Stats: 0:05:05 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:09 (0:00:01 remaining)
+Stats: 0:05:06 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:09 (0:00:01 remaining)
+Stats: 0:05:06 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:07 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:07 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:08 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Stats: 0:05:10 elapsed; 0 hosts completed (1 up), 1 undergoing Script Scan
+NSE Timing: About 99.52% done; ETC: 02:10 (0:00:01 remaining)
+Nmap scan report for www.goodshopping.com (15.197.148.33)
+Host is up (0.00081s latency).
+Other addresses for www.goodshopping.com (not scanned): 3.33.130.190
+rDNS record for 15.197.148.33: a2aa9ff50de748dbe.awsglobalaccelerator.com
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE
+80/tcp  open  http
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+| http-enum: 
+|   /repos/: Possible code repository
+|   /repo/: Possible code repository
+|   /svn/: Possible code repository
+|   /cvs/: Possible code repository
+|   /backup/: Possible backup
+|   /backup: Possible backup
+|   /backup.sql: Possible backup
+|   /backup.sql.gz: Possible backup
+|   /backup.sql.bz2: Possible backup
+|   /backup.zip: Possible backup
+|   /backups/: Possible backup
+|   /bak/: Possible backup
+|   /back/: Possible backup
+|   /cache/backup/: Possible backup
+|   /admin/backup/: Possible backup
+|   /dbbackup.txt: Possible backup
+|   /etc/passwd: Webroot might be in root folder
+|   /boot.ini: Webroot might be in root folder
+|   /example/: Sample scripts
+|   /examples/: Sample scripts
+|   /iissamples/: Sample scripts
+|   /j2eeexamples/: Sample scripts
+|   /j2eeexamplesjsp/: Sample scripts
+|   /sample/: Sample scripts
+|   /ncsample/: Sample scripts
+|   /fpsample/: Sample scripts
+|   /cmsample/: Sample scripts
+|   /samples/: Sample scripts
+|   /mono/1.1/index.aspx: Sample scripts
+|   /robots.txt: Robots file
+|   /S7Web.css: SCADA Siemens PCS7
+|   /Portal0000.htm: SCADA Siemens PCS7
+|   /actuator/: Spring Boot Actuator endpoint
+|   /auditevents/: Spring Boot Actuator endpoint
+|   /autoconfig/: Spring Boot Actuator endpoint
+|   /beans/: Spring Boot Actuator endpoint
+|   /configprops/: Spring Boot Actuator endpoint
+|   /env/: Spring Boot Actuator endpoint
+|   /flyway/: Spring Boot Actuator endpoint
+|   /health/: Spring Boot Actuator endpoint
+|   /healthcheck/: Spring Boot Actuator endpoint
+|   /healthchecks/: Spring Boot Actuator endpoint
+|   /loggers/: Spring Boot Actuator endpoint
+|   /liquibase/: Spring Boot Actuator endpoint
+|   /metrics/: Spring Boot Actuator endpoint
+|   /mappings/: Spring Boot Actuator endpoint
+|   /trace/: Spring Boot Actuator endpoint
+|   /heapdump/: Spring MVC Endpoint
+|   /jolokia/: Spring MVC Endpoint
+|   /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/etc/vmware/hostd/vmInventory.xml: Possible path traversal in VMWare (CVE-2009-3733)
+|   /.htaccess: Incorrect permissions on .htaccess or .htpasswd files
+|   /.htpasswd: Incorrect permissions on .htaccess or .htpasswd files
+|   /_vti_bin/: Frontpage file or folder
+|   /_vti_cnf/: Frontpage file or folder
+|   /_vti_log/: Frontpage file or folder
+|   /_vti_pvt/: Frontpage file or folder
+|   /_vti_txt/: Frontpage file or folder
+|   /postinfo.html: Frontpage file or folder
+|   /_vti_bin/_vti_aut/author.dll: Frontpage file or folder
+|   /_vti_bin/_vti_aut/author.exe: Frontpage file or folder
+|   /_vti_bin/_vti_aut/dvwssr.dll: Frontpage file or folder
+|   /_vti_bin/_vti_adm/admin.dll: Frontpage file or folder
+|   /_vti_bin/_vti_adm/admin.exe: Frontpage file or folder
+|   /_vti_bin/fpcount.exe?Page=default.asp|Image=3: Frontpage file or folder
+|   /_vti_bin/shtml.dll: Frontpage file or folder
+|   /_vti_bin/shtml.exe: Frontpage file or folder
+|   /_vti_pvt/_x_todo.htm: Frontpage file or folder
+|   /_vti_pvt/_x_todoh.htm: Frontpage file or folder
+|   /_vti_pvt/access.cnf: Frontpage file or folder
+|   /_vti_pvt/administrator.pwd: Frontpage file or folder
+|   /_vti_pvt/administrators.pwd: Frontpage file or folder
+|   /_vti_pvt/authors.pwd: Frontpage file or folder
+|   /_vti_pvt/bots.cnf: Frontpage file or folder
+|   /_vti_pvt/botinfs.cnf: Frontpage file or folder
+|   /_vti_pvt/deptodoc.btr: Frontpage file or folder
+|   /_vti_pvt/doctodep.btr: Frontpage file or folder
+|   /_vti_pvt/frontpg.lck: Frontpage file or folder
+|   /_vti_pvt/linkinfo.cnf: Frontpage file or folder
+|   /_vti_pvt/service.cnf: Frontpage file or folder
+|   /_vti_pvt/service.grp: Frontpage file or folder
+|   /_vti_pvt/service.lck: Frontpage file or folder
+|   /_vti_pvt/service.pwd: Frontpage file or folder
+|   /_vti_pvt/Service.stp: Frontpage file or folder
+|   /_vti_pvt/services.cnf: Frontpage file or folder
+|   /_vti_pvt/services.org: Frontpage file or folder
+|   /_vti_pvt/structure.cnf: Frontpage file or folder
+|   /_vti_pvt/svcacl.cnf: Frontpage file or folder
+|   /_vti_pvt/users.pwd: Frontpage file or folder
+|   /_vti_pvt/uniqueperm.cnf: Frontpage file or folder
+|   /_vti_pvt/writeto.cnf: Frontpage file or folder
+|   /.svn/: Subversion folder
+|   /.svn/text-base/.htaccess.svn-base: Subversion folder
+|   /.svn/text-base/.htpasswd.svn-base: Subversion folder
+|   /.svn/text-base/Web.config.svn-base: Subversion folder
+|   /cwhp/auditLog.do?file=..\..\..\..\..\..\..\boot.ini: Possible CiscoWorks (CuOM 8.0 and 8.5) Directory traversal (CVE-2011-0966) (Windows)
+|   /cwhp/auditLog.do?file=..\..\..\..\..\..\..\Program%20Files\CSCOpx\MDC\Tomcat\webapps\triveni\WEB-INF\classes\schedule.properties: Possible CiscoWorks (CuOM 8.0 and 8.5) Directory traversal (CVE-2011-0966) (Windows)
+|   /cwhp/auditLog.do?file=..\..\..\..\..\..\..\Program%20Files\CSCOpx\lib\classpath\com\cisco\nm\cmf\dbservice2\DBServer.properties: Possible CiscoWorks (CuOM 8.0 and 8.5) Directory traversal (CVE-2011-0966) (Windows)
+|   /cwhp/auditLog.do?file=..\..\..\..\..\..\..\Program%20Files\CSCOpx\log\dbpwdChange.log: Possible CiscoWorks (CuOM 8.0 and 8.5) Directory traversal (CVE-2011-0966) (Windows)
+|   /Info.live.htm: Possible DD-WRT router Information Disclosure (BID 45598)
+|   /CuteSoft_Client/CuteEditor/Load.ashx?type=image&file=../../../web.config: Cute Editor ASP.NET Remote File Disclosure ( CVE 2009-4665 )
+|   /cgi-bin/export_debug_msg.exp: Cisco RV320/RV325 Unauthenticated Diagnostic Data & Configuration Export (CVE-2019-1653)
+|   /cgi-bin/config.exp: Cisco RV320/RV325 Unauthenticated Diagnostic Data & Configuration Export (CVE-2019-1653)
+|   /changelog.txt: Interesting, a changelog.
+|   /tinymce/changelog.txt: Interesting, a changelog.
+|   /readme.html: Interesting, a readme.
+|   /pligg/readme.html: Interesting, a readme.
+|   /digg/readme.html: Interesting, a readme.
+|   /news/readme.html: Interesting, a readme.
+|   /db/: BlogWorx Database
+|   /typo3/README.txt: Typo3 Installation
+|   /t3lib/README.txt: Typo3 Installation
+|   /manifest.json: Manifest JSON File
+|   /README: Interesting, a readme.
+|   /README.txt: Interesting, a readme.
+|   /xoda/README: Interesting, a readme.
+|   /docs/README: Interesting, a readme.
+|   /documents/README: Interesting, a readme.
+|   /dms/README: Interesting, a readme.
+|   /status/README: Interesting, a readme.
+|   /statusnet/README: Interesting, a readme.
+|   /twitter/README: Interesting, a readme.
+|   /0/: Potentially interesting folder
+|   /1/: Potentially interesting folder
+|   /2/: Potentially interesting folder
+|   /3/: Potentially interesting folder
+|   /4/: Potentially interesting folder
+|   /5/: Potentially interesting folder
+|   /6/: Potentially interesting folder
+|   /7/: Potentially interesting folder
+|   /8/: Potentially interesting folder
+|   /9/: Potentially interesting folder
+|   /10/: Potentially interesting folder
+|   /a/: Potentially interesting folder
+|   /b/: Potentially interesting folder
+|   /c/: Potentially interesting folder
+|   /d/: Potentially interesting folder
+|   /e/: Potentially interesting folder
+|   /f/: Potentially interesting folder
+|   /g/: Potentially interesting folder
+|   /h/: Potentially interesting folder
+|   /i/: Potentially interesting folder
+|   /j/: Potentially interesting folder
+|   /k/: Potentially interesting folder
+|   /l/: Potentially interesting folder
+|   /m/: Potentially interesting folder
+|   /n/: Potentially interesting folder
+|   /o/: Potentially interesting folder
+|   /p/: Potentially interesting folder
+|   /q/: Potentially interesting folder
+|   /r/: Potentially interesting folder
+|   /s/: Potentially interesting folder
+|   /t/: Potentially interesting folder
+|   /u/: Potentially interesting folder
+|   /v/: Potentially interesting folder
+|   /w/: Potentially interesting folder
+|   /x/: Potentially interesting folder
+|   /y/: Potentially interesting folder
+|   /z/: Potentially interesting folder
+|   /acceso/: Potentially interesting folder
+|   /access/: Potentially interesting folder
+|   /accesswatch/: Potentially interesting folder
+|   /acciones/: Potentially interesting folder
+|   /account/: Potentially interesting folder
+|   /accounting/: Potentially interesting folder
+|   /active/: Potentially interesting folder
+|   /activex/: Potentially interesting folder
+|   /admcgi/: Potentially interesting folder
+|   /admisapi/: Potentially interesting folder
+|   /AdvWebAdmin/: Potentially interesting folder
+|   /agentes/: Potentially interesting folder
+|   /Agent/: Potentially interesting folder
+|   /Agents/: Potentially interesting folder
+|   /AlbumArt_/: Potentially interesting folder
+|   /AlbumArt/: Potentially interesting folder
+|   /Album/: Potentially interesting folder
+|   /allow/: Potentially interesting folder
+|   /analog/: Potentially interesting folder
+|   /anthill/: Potentially interesting folder
+|   /apache/: Potentially interesting folder
+|   /api/: Potentially interesting folder
+|   /api-docs/: Potentially interesting folder
+|   /app/: Potentially interesting folder
+|   /applets/: Potentially interesting folder
+|   /appl/: Potentially interesting folder
+|   /application/: Potentially interesting folder
+|   /applications/: Potentially interesting folder
+|   /applmgr/: Potentially interesting folder
+|   /apply/: Potentially interesting folder
+|   /appsec/: Potentially interesting folder
+|   /apps/: Potentially interesting folder
+|   /archive/: Potentially interesting folder
+|   /archives/: Potentially interesting folder
+|   /ar/: Potentially interesting folder
+|   /asa/: Potentially interesting folder
+|   /asp/: Potentially interesting folder
+|   /atc/: Potentially interesting folder
+|   /aut/: Potentially interesting folder
+|   /authadmin/: Potentially interesting folder
+|   /auth/: Potentially interesting folder
+|   /author/: Potentially interesting folder
+|   /authors/: Potentially interesting folder
+|   /aw/: Potentially interesting folder
+|   /ayuda/: Potentially interesting folder
+|   /b2-include/: Potentially interesting folder
+|   /backend/: Potentially interesting folder
+|   /bad/: Potentially interesting folder
+|   /banca/: Potentially interesting folder
+|   /banco/: Potentially interesting folder
+|   /bank/: Potentially interesting folder
+|   /banner01/: Potentially interesting folder
+|   /banner/: Potentially interesting folder
+|   /banners/: Potentially interesting folder
+|   /bar/: Potentially interesting folder
+|   /batch/: Potentially interesting folder
+|   /bb-dnbd/: Potentially interesting folder
+|   /bbv/: Potentially interesting folder
+|   /bdata/: Potentially interesting folder
+|   /bdatos/: Potentially interesting folder
+|   /beta/: Potentially interesting folder
+|   /billpay/: Potentially interesting folder
+|   /bin/: Potentially interesting folder
+|   /binaries/: Potentially interesting folder
+|   /binary/: Potentially interesting folder
+|   /boadmin/: Potentially interesting folder
+|   /boot/: Potentially interesting folder
+|   /bottom/: Potentially interesting folder
+|   /browse/: Potentially interesting folder
+|   /browser/: Potentially interesting folder
+|   /bsd/: Potentially interesting folder
+|   /btauxdir/: Potentially interesting folder
+|   /bug/: Potentially interesting folder
+|   /bugs/: Potentially interesting folder
+|   /bugzilla/: Potentially interesting folder
+|   /buy/: Potentially interesting folder
+|   /buynow/: Potentially interesting folder
+|   /cached/: Potentially interesting folder
+|   /cache/: Potentially interesting folder
+|   /cache-stats/: Potentially interesting folder
+|   /caja/: Potentially interesting folder
+|   /card/: Potentially interesting folder
+|   /cards/: Potentially interesting folder
+|   /cart/: Potentially interesting folder
+|   /cash/: Potentially interesting folder
+|   /caspsamp/: Potentially interesting folder
+|   /catalog/: Potentially interesting folder
+|   /cbi-bin/: Potentially interesting folder
+|   /ccard/: Potentially interesting folder
+|   /ccards/: Potentially interesting folder
+|   /cd-cgi/: Potentially interesting folder
+|   /cd/: Potentially interesting folder
+|   /cdrom/: Potentially interesting folder
+|   /ce_html/: Potentially interesting folder
+|   /cert/: Potentially interesting folder
+|   /certificado/: Potentially interesting folder
+|   /certificate/: Potentially interesting folder
+|   /cfappman/: Potentially interesting folder
+|   /cfdocs/: Potentially interesting folder
+|   /cfide/: Potentially interesting folder
+|   /cgi-914/: Potentially interesting folder
+|   /cgi-915/: Potentially interesting folder
+|   /cgi-auth/: Potentially interesting folder
+|   /cgi-bin2/: Potentially interesting folder
+|   /cgi-bin/: Potentially interesting folder
+|   /cgibin/: Potentially interesting folder
+|   /cgi.cgi/: Potentially interesting folder
+|   /cgi-csc/: Potentially interesting folder
+|   /cgi-exe/: Potentially interesting folder
+|   /cgi/: Potentially interesting folder
+|   /cgi-home/: Potentially interesting folder
+|   /cgi-lib/: Potentially interesting folder
+|   /cgilib/: Potentially interesting folder
+|   /cgi-local/: Potentially interesting folder
+|   /cgi-perl/: Potentially interesting folder
+|   /cgi-scripts/: Potentially interesting folder
+|   /cgiscripts/: Potentially interesting folder
+|   /cgis/: Potentially interesting folder
+|   /cgi-shl/: Potentially interesting folder
+|   /cgi-shop/: Potentially interesting folder
+|   /cgi-sys/: Potentially interesting folder
+|   /cgi-weddico/: Potentially interesting folder
+|   /cgi-win/: Potentially interesting folder
+|   /cgiwin/: Potentially interesting folder
+|   /class/: Potentially interesting folder
+|   /classes/: Potentially interesting folder
+|   /cliente/: Potentially interesting folder
+|   /clientes/: Potentially interesting folder
+|   /client/: Potentially interesting folder
+|   /clients/: Potentially interesting folder
+|   /cm/: Potentially interesting folder
+|   /cobalt-images/: Potentially interesting folder
+|   /code/: Potentially interesting folder
+|   /com/: Potentially interesting folder
+|   /comments/: Potentially interesting folder
+|   /common/: Potentially interesting folder
+|   /communicator/: Potentially interesting folder
+|   /company/: Potentially interesting folder
+|   /comp/: Potentially interesting folder
+|   /compra/: Potentially interesting folder
+|   /compras/: Potentially interesting folder
+|   /compressed/: Potentially interesting folder
+|   /conecta/: Potentially interesting folder
+|   /conf/: Potentially interesting folder
+|   /config/: Potentially interesting folder
+|   /configs/: Potentially interesting folder
+|   /configure/: Potentially interesting folder
+|   /connect/: Potentially interesting folder
+|   /console/: Potentially interesting folder
+|   /contact/: Potentially interesting folder
+|   /contacts/: Potentially interesting folder
+|   /content/: Potentially interesting folder
+|   /content.ie5/: Potentially interesting folder
+|   /controlpanel/: Potentially interesting folder
+|   /core/: Potentially interesting folder
+|   /corp/: Potentially interesting folder
+|   /correo/: Potentially interesting folder
+|   /counter/: Potentially interesting folder
+|   /credit/: Potentially interesting folder
+|   /cron/: Potentially interesting folder
+|   /crons/: Potentially interesting folder
+|   /crypto/: Potentially interesting folder
+|   /CS/: Potentially interesting folder
+|   /csr/: Potentially interesting folder
+|   /css/: Potentially interesting folder
+|   /cuenta/: Potentially interesting folder
+|   /cuentas/: Potentially interesting folder
+|   /currency/: Potentially interesting folder
+|   /cust/: Potentially interesting folder
+|   /customer/: Potentially interesting folder
+|   /customers/: Potentially interesting folder
+|   /custom/: Potentially interesting folder
+|   /CVS/: Potentially interesting folder
+|   /cvsweb/: Potentially interesting folder
+|   /cybercash/: Potentially interesting folder
+|   /darkportal/: Potentially interesting folder
+|   /database/: Potentially interesting folder
+|   /databases/: Potentially interesting folder
+|   /datafiles/: Potentially interesting folder
+|   /dat/: Potentially interesting folder
+|   /data/: Potentially interesting folder
+|   /dato/: Potentially interesting folder
+|   /datos/: Potentially interesting folder
+|   /db/: Potentially interesting folder
+|   /dbase/: Potentially interesting folder
+|   /dcforum/: Potentially interesting folder
+|   /ddreport/: Potentially interesting folder
+|   /ddrint/: Potentially interesting folder
+|   /debug/: Potentially interesting folder
+|   /debugs/: Potentially interesting folder
+|   /default/: Potentially interesting folder
+|   /deleted/: Potentially interesting folder
+|   /delete/: Potentially interesting folder
+|   /demoauct/: Potentially interesting folder
+|   /demomall/: Potentially interesting folder
+|   /demo/: Potentially interesting folder
+|   /demos/: Potentially interesting folder
+|   /demouser/: Potentially interesting folder
+|   /deny/: Potentially interesting folder
+|   /derived/: Potentially interesting folder
+|   /design/: Potentially interesting folder
+|   /dev/: Potentially interesting folder
+|   /devel/: Potentially interesting folder
+|   /development/: Potentially interesting folder
+|   /directories/: Potentially interesting folder
+|   /directory/: Potentially interesting folder
+|   /directorymanager/: Potentially interesting folder
+|   /dir/: Potentially interesting folder
+|   /dl/: Potentially interesting folder
+|   /dm/: Potentially interesting folder
+|   /DMR/: Potentially interesting folder
+|   /dms0/: Potentially interesting folder
+|   /dmsdump/: Potentially interesting folder
+|   /dms/: Potentially interesting folder
+|   /dnn/: Potentially interesting folder
+|   /doc1/: Potentially interesting folder
+|   /doc/: Potentially interesting folder
+|   /doc-html/: Potentially interesting folder
+|   /docs1/: Potentially interesting folder
+|   /docs/: Potentially interesting folder
+|   /DocuColor/: Potentially interesting folder
+|   /documentation/: Potentially interesting folder
+|   /document/: Potentially interesting folder
+|   /documents/: Potentially interesting folder
+|   /dotnetnuke/: Potentially interesting folder
+|   /down/: Potentially interesting folder
+|   /download/: Potentially interesting folder
+|   /downloads/: Potentially interesting folder
+|   /dump/: Potentially interesting folder
+|   /durep/: Potentially interesting folder
+|   /easylog/: Potentially interesting folder
+|   /eforum/: Potentially interesting folder
+|   /ejemplo/: Potentially interesting folder
+|   /ejemplos/: Potentially interesting folder
+|   /emailclass/: Potentially interesting folder
+|   /email/: Potentially interesting folder
+|   /employees/: Potentially interesting folder
+|   /empoyees/: Potentially interesting folder
+|   /empris/: Potentially interesting folder
+|   /enter/: Potentially interesting folder
+|   /envia/: Potentially interesting folder
+|   /enviamail/: Potentially interesting folder
+|   /error.html: Potentially interesting folder
+|   /error/: Potentially interesting folder
+|   /errors/: Potentially interesting folder
+|   /es/: Potentially interesting folder
+|   /estmt/: Potentially interesting folder
+|   /etc/: Potentially interesting folder
+|   /etcpasswd/: Potentially interesting folder
+|   /excel/: Potentially interesting folder
+|   /exc/: Potentially interesting folder
+|   /exchange/: Potentially interesting folder
+|   /exchweb/: Potentially interesting folder
+|   /exec/: Potentially interesting folder
+|   /exe/: Potentially interesting folder
+|   /exit/: Potentially interesting folder
+|   /export/: Potentially interesting folder
+|   /external/: Potentially interesting folder
+|   /extranet/: Potentially interesting folder
+|   /failure/: Potentially interesting folder
+|   /fbsd/: Potentially interesting folder
+|   /fcgi-bin/: Potentially interesting folder
+|   /fcgi/: Potentially interesting folder
+|   /features/: Potentially interesting folder
+|   /fileadmin/: Potentially interesting folder
+|   /file/: Potentially interesting folder
+|   /filemanager/: Potentially interesting folder
+|   /files/: Potentially interesting folder
+|   /find/: Potentially interesting folder
+|   /flash/: Potentially interesting folder
+|   /foldoc/: Potentially interesting folder
+|   /foobar/: Potentially interesting folder
+|   /foo/: Potentially interesting folder
+|   /form/: Potentially interesting folder
+|   /forms/: Potentially interesting folder
+|   /formsmgr/: Potentially interesting folder
+|   /form-totaller/: Potentially interesting folder
+|   /foto/: Potentially interesting folder
+|   /fotos/: Potentially interesting folder
+|   /fpadmin/: Potentially interesting folder
+|   /fpclass/: Potentially interesting folder
+|   /fpdb/: Potentially interesting folder
+|   /fpe/: Potentially interesting folder
+|   /framesets/: Potentially interesting folder
+|   /frames/: Potentially interesting folder
+|   /frontpage/: Potentially interesting folder
+|   /ftp/: Potentially interesting folder
+|   /ftproot/: Potentially interesting folder
+|   /func/: Potentially interesting folder
+|   /function/: Potentially interesting folder
+|   /functions/: Potentially interesting folder
+|   /fun/: Potentially interesting folder
+|   /general/: Potentially interesting folder
+|   /gfx/: Potentially interesting folder
+|   /gif/: Potentially interesting folder
+|   /gifs/: Potentially interesting folder
+|   /global/: Potentially interesting folder
+|   /globals/: Potentially interesting folder
+|   /good/: Potentially interesting folder
+|   /graphics/: Potentially interesting folder
+|   /grocery/: Potentially interesting folder
+|   /guestbook/: Potentially interesting folder
+|   /guest/: Potentially interesting folder
+|   /guests/: Potentially interesting folder
+|   /GXApp/: Potentially interesting folder
+|   /HB/: Potentially interesting folder
+|   /HBTemplates/: Potentially interesting folder
+|   /helpdesk/: Potentially interesting folder
+|   /help/: Potentially interesting folder
+|   /hidden/: Potentially interesting folder
+|   /hide/: Potentially interesting folder
+|   /hitmatic/: Potentially interesting folder
+|   /hit_tracker/: Potentially interesting folder
+|   /hlstats/: Potentially interesting folder
+|   /home/: Potentially interesting folder
+|   /hosted/: Potentially interesting folder
+|   /host/: Potentially interesting folder
+|   /hostingcontroller/: Potentially interesting folder
+|   /hosting/: Potentially interesting folder
+|   /hp/: Potentially interesting folder
+|   /htbin/: Potentially interesting folder
+|   /htdocs/: Potentially interesting folder
+|   /ht/: Potentially interesting folder
+|   /htm/: Potentially interesting folder
+|   /html/: Potentially interesting folder
+|   /http/: Potentially interesting folder
+|   /https/: Potentially interesting folder
+|   /hyperstat/: Potentially interesting folder
+|   /i18n/: Potentially interesting folder
+|   /ibank/: Potentially interesting folder
+|   /ibill/: Potentially interesting folder
+|   /IBMWebAS/: Potentially interesting folder
+|   /icons/: Potentially interesting folder
+|   /idea/: Potentially interesting folder
+|   /ideas/: Potentially interesting folder
+|   /I/: Potentially interesting folder
+|   /iisadmin/: Potentially interesting folder
+|   /image/: Potentially interesting folder
+|   /images/: Potentially interesting folder
+|   /imagenes/: Potentially interesting folder
+|   /imagery/: Potentially interesting folder
+|   /img/: Potentially interesting folder
+|   /imp/: Potentially interesting folder
+|   /import/: Potentially interesting folder
+|   /impreso/: Potentially interesting folder
+|   /inc/: Potentially interesting folder
+|   /include/: Potentially interesting folder
+|   /includes/: Potentially interesting folder
+|   /incoming/: Potentially interesting folder
+|   /index/: Potentially interesting folder
+|   /inet/: Potentially interesting folder
+|   /inf/: Potentially interesting folder
+|   /info/: Potentially interesting folder
+|   /information/: Potentially interesting folder
+|   /in/: Potentially interesting folder
+|   /ingresa/: Potentially interesting folder
+|   /ingreso/: Potentially interesting folder
+|   /install/: Potentially interesting folder
+|   /internal/: Potentially interesting folder
+|   /internet/: Potentially interesting folder
+|   /intranet/: Potentially interesting folder
+|   /inventory/: Potentially interesting folder
+|   /invitado/: Potentially interesting folder
+|   /isapi/: Potentially interesting folder
+|   /j2ee/: Potentially interesting folder
+|   /japidoc/: Potentially interesting folder
+|   /java/: Potentially interesting folder
+|   /javascript/: Potentially interesting folder
+|   /javasdk/: Potentially interesting folder
+|   /javatest/: Potentially interesting folder
+|   /jave/: Potentially interesting folder
+|   /JBookIt/: Potentially interesting folder
+|   /jdbc/: Potentially interesting folder
+|   /job/: Potentially interesting folder
+|   /jrun/: Potentially interesting folder
+|   /jsa/: Potentially interesting folder
+|   /jscript/: Potentially interesting folder
+|   /jserv/: Potentially interesting folder
+|   /js/: Potentially interesting folder
+|   /jslib/: Potentially interesting folder
+|   /jsp/: Potentially interesting folder
+|   /junk/: Potentially interesting folder
+|   /kiva/: Potentially interesting folder
+|   /known/: Potentially interesting folder
+|   /labs/: Potentially interesting folder
+|   /lcgi/: Potentially interesting folder
+|   /lib/: Potentially interesting folder
+|   /libraries/: Potentially interesting folder
+|   /library/: Potentially interesting folder
+|   /libro/: Potentially interesting folder
+|   /license/: Potentially interesting folder
+|   /licenses/: Potentially interesting folder
+|   /links/: Potentially interesting folder
+|   /linux/: Potentially interesting folder
+|   /loader/: Potentially interesting folder
+|   /local/: Potentially interesting folder
+|   /location/: Potentially interesting folder
+|   /locations/: Potentially interesting folder
+|   /logfile/: Potentially interesting folder
+|   /logfiles/: Potentially interesting folder
+|   /logger/: Potentially interesting folder
+|   /logg/: Potentially interesting folder
+|   /logging/: Potentially interesting folder
+|   /logon/: Potentially interesting folder
+|   /logout/: Potentially interesting folder
+|   /lost+found/: Potentially interesting folder
+|   /mailman/: Potentially interesting folder
+|   /mailroot/: Potentially interesting folder
+|   /makefile/: Potentially interesting folder
+|   /manage/: Potentially interesting folder
+|   /management/: Potentially interesting folder
+|   /man/: Potentially interesting folder
+|   /manual/: Potentially interesting folder
+|   /map/: Potentially interesting folder
+|   /maps/: Potentially interesting folder
+|   /marketing/: Potentially interesting folder
+|   /member/: Potentially interesting folder
+|   /members/: Potentially interesting folder
+|   /mem_bin/: Potentially interesting folder
+|   /mem/: Potentially interesting folder
+|   /message/: Potentially interesting folder
+|   /messaging/: Potentially interesting folder
+|   /metacart/: Potentially interesting folder
+|   /microsoft/: Potentially interesting folder
+|   /misc/: Potentially interesting folder
+|   /mkstats/: Potentially interesting folder
+|   /mod/: Potentially interesting folder
+|   /module/: Potentially interesting folder
+|   /modules/: Potentially interesting folder
+|   /movimientos/: Potentially interesting folder
+|   /mpcgi/: Potentially interesting folder
+|   /mqseries/: Potentially interesting folder
+|   /msfpe/: Potentially interesting folder
+|   /ms/: Potentially interesting folder
+|   /msql/: Potentially interesting folder
+|   /Msword/: Potentially interesting folder
+|   /mxhtml/: Potentially interesting folder
+|   /mxportal/: Potentially interesting folder
+|   /my/: Potentially interesting folder
+|   /My%20Shared%20Folder/: Potentially interesting folder
+|   /mysql_admin/: Potentially interesting folder
+|   /mysql/: Potentially interesting folder
+|   /name/: Potentially interesting folder
+|   /names/: Potentially interesting folder
+|   /ncadmin/: Potentially interesting folder
+|   /nchelp/: Potentially interesting folder
+|   /netbasic/: Potentially interesting folder
+|   /netcat/: Potentially interesting folder
+|   /NetDynamic/: Potentially interesting folder
+|   /NetDynamics/: Potentially interesting folder
+|   /net/: Potentially interesting folder
+|   /netmagstats/: Potentially interesting folder
+|   /netscape/: Potentially interesting folder
+|   /netshare/: Potentially interesting folder
+|   /nettracker/: Potentially interesting folder
+|   /network/: Potentially interesting folder
+|   /new/: Potentially interesting folder
+|   /news/: Potentially interesting folder
+|   /News/: Potentially interesting folder
+|   /nextgeneration/: Potentially interesting folder
+|   /nl/: Potentially interesting folder
+|   /notes/: Potentially interesting folder
+|   /noticias/: Potentially interesting folder
+|   /NSearch/: Potentially interesting folder
+|   /objects/: Potentially interesting folder
+|   /odbc/: Potentially interesting folder
+|   /officescan/: Potentially interesting folder
+|   /ojspdemos/: Potentially interesting folder
+|   /old_files/: Potentially interesting folder
+|   /oldfiles/: Potentially interesting folder
+|   /old/: Potentially interesting folder
+|   /oprocmgr-service/: Potentially interesting folder
+|   /oprocmgr-status/: Potentially interesting folder
+|   /oracle/: Potentially interesting folder
+|   /oradata/: Potentially interesting folder
+|   /order/: Potentially interesting folder
+|   /orders/: Potentially interesting folder
+|   /os/: Potentially interesting folder
+|   /out/: Potentially interesting folder
+|   /outgoing/: Potentially interesting folder
+|   /owners/: Potentially interesting folder
+|   /ows-bin/: Potentially interesting folder
+|   /page/: Potentially interesting folder
+|   /_pages/: Potentially interesting folder
+|   /pages/: Potentially interesting folder
+|   /partner/: Potentially interesting folder
+|   /partners/: Potentially interesting folder
+|   /passport/: Potentially interesting folder
+|   /password/: Potentially interesting folder
+|   /passwords/: Potentially interesting folder
+|   /path/: Potentially interesting folder
+|   /payment/: Potentially interesting folder
+|   /payments/: Potentially interesting folder
+|   /pccsmysqladm/: Potentially interesting folder
+|   /PDG_Cart/: Potentially interesting folder
+|   /perl5/: Potentially interesting folder
+|   /perl/: Potentially interesting folder
+|   /personal/: Potentially interesting folder
+|   /pforum/: Potentially interesting folder
+|   /phorum/: Potentially interesting folder
+|   /phpBB/: Potentially interesting folder
+|   /php_classes/: Potentially interesting folder
+|   /phpclassifieds/: Potentially interesting folder
+|   /php/: Potentially interesting folder
+|   /phpimageview/: Potentially interesting folder
+|   /phpnuke/: Potentially interesting folder
+|   /phpPhotoAlbum/: Potentially interesting folder
+|   /phpprojekt/: Potentially interesting folder
+|   /phpSecurePages/: Potentially interesting folder
+|   /pics/: Potentially interesting folder
+|   /pictures/: Potentially interesting folder
+|   /pike/: Potentially interesting folder
+|   /piranha/: Potentially interesting folder
+|   /pls/: Potentially interesting folder
+|   /plsql/: Potentially interesting folder
+|   /plssampleadmin_/: Potentially interesting folder
+|   /plssampleadmin/: Potentially interesting folder
+|   /plssampleadmin_help/: Potentially interesting folder
+|   /plssample/: Potentially interesting folder
+|   /poll/: Potentially interesting folder
+|   /polls/: Potentially interesting folder
+|   /portal/: Potentially interesting folder
+|   /portals/: Potentially interesting folder
+|   /postgres/: Potentially interesting folder
+|   /postnuke/: Potentially interesting folder
+|   /ppwb/: Potentially interesting folder
+|   /printer/: Potentially interesting folder
+|   /printers/: Potentially interesting folder
+|   /privacy/: Potentially interesting folder
+|   /privado/: Potentially interesting folder
+|   /_private/: Potentially interesting folder
+|   /private/: Potentially interesting folder
+|   /priv/: Potentially interesting folder
+|   /prod/: Potentially interesting folder
+|   /projectserver/: Potentially interesting folder
+|   /protected/: Potentially interesting folder
+|   /proxy/: Potentially interesting folder
+|   /prueba/: Potentially interesting folder
+|   /pruebas/: Potentially interesting folder
+|   /prv/: Potentially interesting folder
+|   /pub/: Potentially interesting folder
+|   /_public/: Potentially interesting folder
+|   /public/: Potentially interesting folder
+|   /publica/: Potentially interesting folder
+|   /publicar/: Potentially interesting folder
+|   /publico/: Potentially interesting folder
+|   /publish/: Potentially interesting folder
+|   /purchase/: Potentially interesting folder
+|   /purchases/: Potentially interesting folder
+|   /pw/: Potentially interesting folder
+|   /python/: Potentially interesting folder
+|   /random_banner/: Potentially interesting folder
+|   /rdp/: Potentially interesting folder
+|   /Readme/: Potentially interesting folder
+|   /recycler/: Potentially interesting folder
+|   /registered/: Potentially interesting folder
+|   /register/: Potentially interesting folder
+|   /registry/: Potentially interesting folder
+|   /remote/: Potentially interesting folder
+|   /remove/: Potentially interesting folder
+|   /report/: Potentially interesting folder
+|   /reports/: Potentially interesting folder
+|   /reseller/: Potentially interesting folder
+|   /restricted/: Potentially interesting folder
+|   /retail/: Potentially interesting folder
+|   /reveal/: Potentially interesting folder
+|   /reviews/: Potentially interesting folder
+|   /ROADS/: Potentially interesting folder
+|   /robot/: Potentially interesting folder
+|   /robots/: Potentially interesting folder
+|   /root/: Potentially interesting folder
+|   /rsrc/: Potentially interesting folder
+|   /ruby/: Potentially interesting folder
+|   /sales/: Potentially interesting folder
+|   /save/: Potentially interesting folder
+|   /script/: Potentially interesting folder
+|   /ScriptLibrary/: Potentially interesting folder
+|   /scripts/: Potentially interesting folder
+|   /search/: Potentially interesting folder
+|   /search-ui/: Potentially interesting folder
+|   /sec/: Potentially interesting folder
+|   /secret/: Potentially interesting folder
+|   /secured/: Potentially interesting folder
+|   /secure/: Potentially interesting folder
+|   /security/: Potentially interesting folder
+|   /sell/: Potentially interesting folder
+|   /server/: Potentially interesting folder
+|   /server-info/: Potentially interesting folder
+|   /servers/: Potentially interesting folder
+|   /server_stats/: Potentially interesting folder
+|   /serverstats/: Potentially interesting folder
+|   /server-status/: Potentially interesting folder
+|   /service/: Potentially interesting folder
+|   /services/: Potentially interesting folder
+|   /servicio/: Potentially interesting folder
+|   /servicios/: Potentially interesting folder
+|   /servlet/: Potentially interesting folder
+|   /servlets/: Potentially interesting folder
+|   /session/: Potentially interesting folder
+|   /setup/: Potentially interesting folder
+|   /shared/: Potentially interesting folder
+|   /sharedtemplates/: Potentially interesting folder
+|   /share/: Potentially interesting folder
+|   /shell-cgi/: Potentially interesting folder
+|   /shipping/: Potentially interesting folder
+|   /shop/: Potentially interesting folder
+|   /shopper/: Potentially interesting folder
+|   /show/: Potentially interesting folder
+|   /SilverStream/: Potentially interesting folder
+|   /siteadmin/: Potentially interesting folder
+|   /site/: Potentially interesting folder
+|   /sitemgr/: Potentially interesting folder
+|   /siteminderagent/: Potentially interesting folder
+|   /siteminder/: Potentially interesting folder
+|   /siteserver/: Potentially interesting folder
+|   /sites/: Potentially interesting folder
+|   /sitestats/: Potentially interesting folder
+|   /siteupdate/: Potentially interesting folder
+|   /smreports/: Potentially interesting folder
+|   /smreportsviewer/: Potentially interesting folder
+|   /soapdocs/: Potentially interesting folder
+|   /soap/: Potentially interesting folder
+|   /software/: Potentially interesting folder
+|   /solaris/: Potentially interesting folder
+|   /source/: Potentially interesting folder
+|   /sql/: Potentially interesting folder
+|   /squid/: Potentially interesting folder
+|   /src/: Potentially interesting folder
+|   /srchadm/: Potentially interesting folder
+|   /ssi/: Potentially interesting folder
+|   /ssl/: Potentially interesting folder
+|   /sslkeys/: Potentially interesting folder
+|   /staff/: Potentially interesting folder
+|   /state/: Potentially interesting folder
+|   /stat/: Potentially interesting folder
+|   /statistic/: Potentially interesting folder
+|   /statistics/: Potentially interesting folder
+|   /stats-bin-p/: Potentially interesting folder
+|   /stats/: Potentially interesting folder
+|   /stats_old/: Potentially interesting folder
+|   /status/: Potentially interesting folder
+|   /storage/: Potentially interesting folder
+|   /StoreDB/: Potentially interesting folder
+|   /store/: Potentially interesting folder
+|   /storemgr/: Potentially interesting folder
+|   /stronghold-info/: Potentially interesting folder
+|   /stronghold-status/: Potentially interesting folder
+|   /stuff/: Potentially interesting folder
+|   /style/: Potentially interesting folder
+|   /styles/: Potentially interesting folder
+|   /stylesheet/: Potentially interesting folder
+|   /stylesheets/: Potentially interesting folder
+|   /subir/: Potentially interesting folder
+|   /sun/: Potentially interesting folder
+|   /super_stats/: Potentially interesting folder
+|   /supplier/: Potentially interesting folder
+|   /suppliers/: Potentially interesting folder
+|   /supply/: Potentially interesting folder
+|   /supporter/: Potentially interesting folder
+|   /support/: Potentially interesting folder
+|   /sysadmin/: Potentially interesting folder
+|   /sysbackup/: Potentially interesting folder
+|   /sys/: Potentially interesting folder
+|   /system/: Potentially interesting folder
+|   /systems/: Potentially interesting folder
+|   /tar/: Potentially interesting folder
+|   /target/: Potentially interesting folder
+|   /tarjetas/: Potentially interesting folder
+|   /tech/: Potentially interesting folder
+|   /technote/: Potentially interesting folder
+|   /te_html/: Potentially interesting folder
+|   /temp/: Potentially interesting folder
+|   /template/: Potentially interesting folder
+|   /templates/: Potentially interesting folder
+|   /temporal/: Potentially interesting folder
+|   /test-cgi/: Potentially interesting folder
+|   /testing/: Potentially interesting folder
+|   /tests/: Potentially interesting folder
+|   /testweb/: Potentially interesting folder
+|   /themes/: Potentially interesting folder
+|   /ticket/: Potentially interesting folder
+|   /tickets/: Potentially interesting folder
+|   /tip/: Potentially interesting folder
+|   /tips/: Potentially interesting folder
+|   /tmp/: Potentially interesting folder
+|   /ToDo/: Potentially interesting folder
+|   /tool/: Potentially interesting folder
+|   /tools/: Potentially interesting folder
+|   /TopAccess/: Potentially interesting folder
+|   /top/: Potentially interesting folder
+|   /tpv/: Potentially interesting folder
+|   /trabajo/: Potentially interesting folder
+|   /track/: Potentially interesting folder
+|   /tracking/: Potentially interesting folder
+|   /transfer/: Potentially interesting folder
+|   /transito/: Potentially interesting folder
+|   /transpolar/: Potentially interesting folder
+|   /tree/: Potentially interesting folder
+|   /trees/: Potentially interesting folder
+|   /trick/: Potentially interesting folder
+|   /tricks/: Potentially interesting folder
+|   /u02/: Potentially interesting folder
+|   /unix/: Potentially interesting folder
+|   /unknown/: Potentially interesting folder
+|   /updates/: Potentially interesting folder
+|   /upload/: Potentially interesting folder
+|   /uploads/: Potentially interesting folder
+|   /usage/: Potentially interesting folder
+|   /userdb/: Potentially interesting folder
+|   /user/: Potentially interesting folder
+|   /users/: Potentially interesting folder
+|   /us/: Potentially interesting folder
+|   /usr/: Potentially interesting folder
+|   /ustats/: Potentially interesting folder
+|   /usuario/: Potentially interesting folder
+|   /usuarios/: Potentially interesting folder
+|   /util/: Potentially interesting folder
+|   /utils/: Potentially interesting folder
+|   /vendor/: Potentially interesting folder
+|   /vfs/: Potentially interesting folder
+|   /view/: Potentially interesting folder
+|   /vpn/: Potentially interesting folder
+|   /vti_txt/: Potentially interesting folder
+|   /w2000/: Potentially interesting folder
+|   /w2k/: Potentially interesting folder
+|   /w3perl/: Potentially interesting folder
+|   /w-agora/: Potentially interesting folder
+|   /way-board/: Potentially interesting folder
+|   /web800fo/: Potentially interesting folder
+|   /webaccess/: Potentially interesting folder
+|   /webadmin/: Potentially interesting folder
+|   /webAdmin/: Potentially interesting folder
+|   /webalizer/: Potentially interesting folder
+|   /webapps/: Potentially interesting folder
+|   /WebBank/: Potentially interesting folder
+|   /webboard/: Potentially interesting folder
+|   /WebCalendar/: Potentially interesting folder
+|   /webcart/: Potentially interesting folder
+|   /webcart-lite/: Potentially interesting folder
+|   /webcgi/: Potentially interesting folder
+|   /webdata/: Potentially interesting folder
+|   /webdav/: Potentially interesting folder
+|   /webdb/: Potentially interesting folder
+|   /webDB/: Potentially interesting folder
+|   /web/: Potentially interesting folder
+|   /webimages2/: Potentially interesting folder
+|   /webimages/: Potentially interesting folder
+|   /web-inf/: Potentially interesting folder
+|   /webmaster/: Potentially interesting folder
+|   /webmaster_logs/: Potentially interesting folder
+|   /webMathematica/: Potentially interesting folder
+|   /webpub/: Potentially interesting folder
+|   /webpub-ui/: Potentially interesting folder
+|   /webreports/: Potentially interesting folder
+|   /webreps/: Potentially interesting folder
+|   /webshare/: Potentially interesting folder
+|   /WebShop/: Potentially interesting folder
+|   /website/: Potentially interesting folder
+|   /webstat/: Potentially interesting folder
+|   /webstats/: Potentially interesting folder
+|   /Web_store/: Potentially interesting folder
+|   /webtrace/: Potentially interesting folder
+|   /WebTrend/: Potentially interesting folder
+|   /webtrends/: Potentially interesting folder
+|   /web_usage/: Potentially interesting folder
+|   /win2k/: Potentially interesting folder
+|   /window/: Potentially interesting folder
+|   /windows/: Potentially interesting folder
+|   /win/: Potentially interesting folder
+|   /winnt/: Potentially interesting folder
+|   /word/: Potentially interesting folder
+|   /work/: Potentially interesting folder
+|   /world/: Potentially interesting folder
+|   /wsdocs/: Potentially interesting folder
+|   /WS_FTP/: Potentially interesting folder
+|   /wstats/: Potentially interesting folder
+|   /wusage/: Potentially interesting folder
+|   /www0/: Potentially interesting folder
+|   /www2/: Potentially interesting folder
+|   /www3/: Potentially interesting folder
+|   /www4/: Potentially interesting folder
+|   /www/: Potentially interesting folder
+|   /wwwjoin/: Potentially interesting folder
+|   /wwwrooot/: Potentially interesting folder
+|   /www-sql/: Potentially interesting folder
+|   /wwwstat/: Potentially interesting folder
+|   /wwwstats/: Potentially interesting folder
+|   /xGB/: Potentially interesting folder
+|   /xml/: Potentially interesting folder
+|   /XSL/: Potentially interesting folder
+|   /xtemp/: Potentially interesting folder
+|   /xymon/: Potentially interesting folder
+|   /zb41/: Potentially interesting folder
+|   /zipfiles/: Potentially interesting folder
+|   /zip/: Potentially interesting folder
+|   /_docs/: Potentially interesting folder
+|   /sitecore/shell/sitecore.version.xml: Sitecore.NET login page
+|_  /sitecore/login/default.aspx: Sitecore.NET login page
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+443/tcp open  https
+| http-enum: 
+|   /repos/: Possible code repository
+|   /repo/: Possible code repository
+|   /svn/: Possible code repository
+|   /cvs/: Possible code repository
+|_  /sdk/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/%2E%2E/etc/vmware/hostd/vmInventory.xml: Possible path traversal in VMWare (CVE-2009-3733)
+|_http-vuln-cve2014-3704: ERROR: Script execution failed (use -d to debug)
+| http-vuln-cve2010-0738: 
+|_  /jmx-console/: Authentication was not required
+|_http-majordomo2-dir-traversal: ERROR: Script execution failed (use -d to debug)
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-aspnet-debug: ERROR: Script execution failed (use -d to debug)
+
+Nmap done: 1 IP address (1 host up) scanned in 665.55 seconds
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hnmap -p 139,445 www.goodshopping.com
+[K[A[4C[36mn[36mm[36ma[36mp[39m [32m-[32mp[39m[1B[K[?1l>[?2004l
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-01 02:16 EST
+Nmap scan report for www.goodshopping.com (15.197.148.33)
+Host is up (0.00081s latency).
+Other addresses for www.goodshopping.com (not scanned): 3.33.130.190
+rDNS record for 15.197.148.33: a2aa9ff50de748dbe.awsglobalaccelerator.com
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+
+Nmap done: 1 IP address (1 host up) scanned in 1.52 seconds
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hsmbclient -L //www.goodshopping.com -N
+[K[A[4C[36ms[36mm[36mb[36mc[36ml[36mi[36me[36mn[36mt[39m [32m-[32mL[39m[24C[32m-[32mN[39m[1B[K[?1l>[?2004l
+do_connect: Connection to www.goodshopping.com failed (Error NT_STATUS_IO_TIMEOUT)
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hnmap -p 139,445 www.goodshopping.com
+[K[A[4C[36mn[36mm[36ma[36mp[39m [32m-[32mp[39m[1B[K[?1l>[?2004l
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-12-01 02:20 EST
+Nmap scan report for www.goodshopping.com (15.197.148.33)
+Host is up (0.00094s latency).
+Other addresses for www.goodshopping.com (not scanned): 3.33.130.190
+rDNS record for 15.197.148.33: a2aa9ff50de748dbe.awsglobalaccelerator.com
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+445/tcp filtered microsoft-ds
+
+Nmap done: 1 IP address (1 host up) scanned in 1.53 seconds
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004henum4linux -a www.goodshopping.com | tee enum4linux.txt
+[K[A[4C[36me[36mn[36mu[36mm[36m4[36ml[36mi[36mn[36mu[36mx[39m [32m-[32ma[39m[22C[1m[34m|[0m[39m [36mt[36me[36me[39m[1B[K[?1l>[?2004l
+Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Mon Dec  1 02:21:18 2025
+
+[34m =========================================( [0m[32mTarget Information[0m[34m )=========================================
+
+[0mTarget ........... www.goodshopping.com
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+[34m ========================( [0m[32mEnumerating Workgroup/Domain on www.goodshopping.com[0m[34m )========================
+
+[0m[33m
+[E] [0m[31mCan't find workgroup/domain
+
+[0m
+
+[34m ============================( [0m[32mNbtstat Information for www.goodshopping.com[0m[34m )============================
+
+[0mLooking up status of 15.197.148.33
+No reply from 15.197.148.33
+
+[34m ===============================( [0m[32mSession Check on www.goodshopping.com[0m[34m )===============================
+
+[0m[33m
+[E] [0m[31mServer doesn't allow session using username '', password ''.  Aborting remainder of tests.
+
+[0m                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004htheharvester -d goodshopping.com -b google,bing,duckduckgo -l 200 -f harvester_output
+[K[A[4C[36mt[36mh[36me[36mh[36ma[36mr[36mv[36me[36ms[36mt[36me[36mr[39m [32m-[32md[39m[18C[32m-[32mb[39m[24C[32m-[32ml[39m[5C[32m-[32mf[39m[1B[K[?1l>[?2004l
+┏━([1;31mMessage from Kali developers[00m)
+┃
+┃ The command theharvester is deprecated. Please use theHarvester instead.
+┃
+┗━
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004htheHarvester -d goodshopping.com -b google,bing,duckduckgo -l 200 -f harvester_output [86D[36mt[36mh[36me[36mH[36ma[36mr[36mv[36me[36ms[36mt[36me[36mr[39m [32m-[32md[39m[18C[32m-[32mb[39m[24C[32m-[32ml[39m[5C[32m-[32mf[39m[18C[?1l>[?2004l
+Read proxies.yaml from /etc/theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.8.2                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+The following engines are not supported: {'google'}
+
+[!] Invalid source.
+
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004htheHarvester -d goodshopping.com -b crtsh -f harvester_output[61D[36mt[36mh[36me[36mH[36ma[36mr[36mv[36me[36ms[36mt[36me[36mr[39m [32m-[32md[39m[18C[32m-[32mb[39m[7C[32m-[32mf[39m[17C[?1l>[?2004l
+Read proxies.yaml from /etc/theHarvester/proxies.yaml
+*******************************************************************
+*  _   _                                            _             *
+* | |_| |__   ___    /\  /\__ _ _ ____   _____  ___| |_ ___ _ __  *
+* | __|  _ \ / _ \  / /_/ / _` | '__\ \ / / _ \/ __| __/ _ \ '__| *
+* | |_| | | |  __/ / __  / (_| | |   \ V /  __/\__ \ ||  __/ |    *
+*  \__|_| |_|\___| \/ /_/ \__,_|_|    \_/ \___||___/\__\___|_|    *
+*                                                                 *
+* theHarvester 4.8.2                                              *
+* Coded by Christian Martorella                                   *
+* Edge-Security Research                                          *
+* cmartorella@edge-security.com                                   *
+*                                                                 *
+*******************************************************************
+
+[*] Target: goodshopping.com 
+
+[*] Searching CRTsh. 
+
+[*] No IPs found.
+
+[*] No emails found.
+
+[*] No people found.
+
+[*] Hosts found: 0
+---------------------
+
+[*] Reporting started.
+[*] XML File saved.
+[*] JSON File saved.
+
+
+
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[7m^[[27m[200~ping -c 3 google.com[?1l>[?2004l
+zsh: bad pattern: ^[[200~ping
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h~[4m[32m~[24m[39m[4m[32m~[4m[32mwget https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.6.2-debian10_amd64.deb -O nessus.deb[24m[39m
+[K[A[4C[39m[4m~[39m[4mw[39m[4mg[39m[4me[39m[4mt[24m[24m[39m [24m[39mh[24m[39mt[24m[39mt[24m[39mp[24m[39ms[24m[39m:[24m[39m/[24m[39m/[24m[39mw[24m[39mw[24m[39mw[24m[39m.[24m[39mt[24m[39me[24m[39mn[24m[39ma[24m[39mb[24m[39ml[24m[39me[24m[39m.[24m[39mc[24m[39mo[24m[39mm[24m[39m/[24m[39md[24m[39mo[24m[39mw[24m[39mn[24m[39ml[24m[39mo[24m[39ma[24m[39md[24m[39ms[24m[39m/[24m[39ma[24m[39mp[24m[39mi[24m[39m/[24m[39mv[24m[39m2[24m[39m/[24m[39mp[24m[39ma[24m[39mg[24m[39me[24m[39ms[24m[39m/[24m[39mn[24m[39me[24m[39ms[24m[39ms[24m[39mu[24m[39ms[24m[39m/[24m[39mf[24m[39mi[24m[39ml[24m[39me[24m[39ms[24m[39m/[24m[39mN[24m[39me[24m[39ms[24m[39ms[24m[39mu[24m[39ms[24m[39m-[24m[39m1[24m[39m0[24m[39m.[24m[39m6[24m[39m.[24m[39m2[24m[39m-[24m[39md[24m[39me[24m[39mb[24m[39mi[24m[39ma[24m[39mn[24m[39m1[24m[39m0[24m[39m_[24m[39ma[24m[39mm[24m[39md[24m[39m6[24m[39m4[24m[39m.[24m[39md[24m[39me[24m[39mb[24m[39m [24m[32m-[24m[32mO[39m[24m[39m [24m[39mn[24m[39me[24m[39ms[24m[39ms[24m[39mu[24m[39ms[24m[39m.[24m[39md[24m[39me[24m[39mb[1B[K[?1l>[?2004l
+Command '~wget' not found, did you mean:
+  command 'owget' from deb ow-shell
+  command 'wget' from deb wget
+  command 'pwget' from deb pwget
+Try: sudo apt install <deb name>
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hsudo apt update
+sudo apt install wget -y[K[A[20D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ma[36mp[36mt[39m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ma[36mp[36mt[39m[14C[32m-[32my[39m[?1l>[?2004l
+[sudo] password for kali: 
+[33m0% [Working][0m[33m0% [Waiting for headers][0m[33m                        0% [Working][0m[33m0% [Waiting for headers][0m                        Get:1 http://mirrors.esto.network/kali kali-rolling InRelease [34.0 kB]
+[33m0% [1 InRelease 13.5 kB/34.0 kB 40%][0m[33m                                    0% [Working][0m[33m16% [Working][0m             Get:2 http://mirrors.esto.network/kali kali-rolling/main amd64 Packages [21.0 MB]
+[33m16% [2 Packages 30.9 kB/21.0 MB 0%][0m[33m17% [2 Packages 1,412 kB/21.0 MB 7%][0m[33m27% [2 Packages 10.9 MB/21.0 MB 52%][0m[33m37% [2 Packages 19.8 MB/21.0 MB 94%][0m[33m                                    38% [Working][0m[33m38% [2 Packages store 0 B] [Waiting for headers][0m                                                Get:3 http://mirrors.esto.network/kali kali-rolling/main amd64 Contents (deb) [52.7 MB]
+[33m38% [2 Packages store 0 B] [3 Contents-amd64 39.4 kB/52.7 MB 0%][0m[33m48% [2 Packages store 0 B] [3 Contents-amd64 9,171 kB/52.7 MB 17%][0m[33m                                                                  56% [2 Packages store 0 B] [3 Contents-amd64 17.1 MB/52.7 MB 32%][0m[33m                                                                 61% [3 Contents-amd64 21.4 MB/52.7 MB 41%][0m[33m71% [3 Contents-amd64 30.7 MB/52.7 MB 58%][0m[33m80% [3 Contents-amd64 38.5 MB/52.7 MB 73%][0m[33m89% [3 Contents-amd64 47.7 MB/52.7 MB 91%][0m[33m95% [Waiting for headers]                                                                                                                                                                             11.7 MB/s 0s[0m[33m95% [3 Contents-amd64 store 0 B] [Waiting for headers]                                                                                                                                                11.7 MB/s 0s[0m                                                                                                                                                                                                                  Get:4 http://mirrors.esto.network/kali kali-rolling/contrib amd64 Packages [115 kB]
+[33m95% [3 Contents-amd64 store 0 B] [4 Packages 12.3 kB/115 kB 11%]                                                                                                                                      11.7 MB/s 0s[0m[33m95% [3 Contents-amd64 store 0 B] [Waiting for headers]                                                                                                                                                11.7 MB/s 0s[0m                                                                                                                                                                                                                  Get:5 http://mirrors.esto.network/kali kali-rolling/contrib amd64 Contents (deb) [260 kB]
+[33m95% [3 Contents-amd64 store 0 B] [5 Contents-amd64 149 kB/260 kB 58%]                                                                                                                                 11.7 MB/s 0s[0m[33m95% [3 Contents-amd64 store 0 B] [Waiting for headers]                                                                                                                                                11.7 MB/s 0s[0m                                                                                                                                                                                                                  Get:6 http://mirrors.esto.network/kali kali-rolling/non-free amd64 Packages [187 kB]
+[33m95% [3 Contents-amd64 store 0 B] [6 Packages 98.3 kB/187 kB 52%]                                                                                                                                      11.7 MB/s 0s[0m[33m95% [3 Contents-amd64 store 0 B] [Waiting for headers]                                                                                                                                                11.7 MB/s 0s[0m                                                                                                                                                                                                                  Get:7 http://mirrors.esto.network/kali kali-rolling/non-free amd64 Contents (deb) [894 kB]
+[33m95% [3 Contents-amd64 store 0 B] [7 Contents-amd64 26.1 kB/894 kB 3%]                                                                                                                                 11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                      11.7 MB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                       232 kB/s 0s[0m[33m96% [3 Contents-amd64 store 0 B]                                                                                                                                                                       232 kB/s 0s[0m[33m97% [Working]                                                                                                                                                                                          232 kB/s 0s[0m[33m97% [4 Packages store 0 B]                                                                                                                                                                             232 kB/s 0s[0m[33m98% [Working]                                                                                                                                                                                          232 kB/s 0s[0m[33m98% [5 Contents-amd64 store 0 B]                                                                                                                                                                       232 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                          232 kB/s 0s[0m[33m99% [6 Packages store 0 B]                                                                                                                                                                             232 kB/s 0s[0m[33m99% [Working]                                                                                                                                                                                          232 kB/s 0s[0m[33m99% [7 Contents-amd64 store 0 B]                                                                                                                                                                       232 kB/s 0s[0m[33m100% [Working]                                                                                                                                                                                         232 kB/s 0s[0m                                                                                                                                                                                                                  Fetched 75.1 MB in 13s (5,627 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%                             Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                [1m177 packages can be upgraded. Run 'apt list --upgradable' to see them.
+[0mReading package lists... 0%Reading package lists... 100%                              Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                wget is already the newest version (1.25.0-2).
+Solving dependencies... 0%Solving dependencies... 10%                            The following packages were automatically installed and are no longer required:
+  amass-common             libdisplay-info2       libjs-jquery-ui     libplacebo349  libtheoraenc1   libx264-164            python3-kismetcapturebtgeiger         python3-protobuf    samba-ad-provision
+  gir1.2-girepository-2.0  libgdal37              libjs-underscore    libportmidi0   libudfread0     libyelp0               python3-kismetcapturefreaklabszigbee  python3-xlutils     samba-dsdb-modules
+  libarmadillo14           libgeos3.14.0          libmongoc-1.0-0t64  librav1e0.7    libwireshark18  python3-bluepy         python3-kismetcapturertl433           python3-xlwt
+  libbluray2               libgirepository-1.0-1  libnet1             libsqlcipher1  libwiretap15    python3-click-plugins  python3-kismetcapturertladsb          python3-zombie-imp
+  libbson-1.0-0t64         libinstpatch-1.0-2     libobjc-14-dev      libtheoradec1  libwsutil16     python3-gpg            python3-kismetcapturertlamr           samba-ad-dc
+Use 'sudo apt autoremove' to remove them.
+
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 177
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hwget https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.6.2-debian10_amd64.deb -O nessus.deb[111D[36mw[36mg[36me[36mt[39m[94C[32m-[32mO[39m[11C[?1l>[?2004l
+--2025-12-01 02:34:46--  https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.6.2-debian10_amd64.deb
+Resolving www.tenable.com (www.tenable.com)... 104.16.48.5, 104.16.49.5, 2606:4700::6810:3105, ...
+Connecting to www.tenable.com (www.tenable.com)|104.16.48.5|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-12-01 02:34:50 ERROR 404: Not Found.
+
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hwget https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.11.0-debian10_amd64.deb -O nessus.deb
+[K[A[4C[36mw[36mg[36me[36mt[39m[95C[32m-[32mO[39m [1mn[1me[1ms[1ms[1mu[1ms[1m.[1md[1me[1mb[0m[1B[K[?1l>[?2004l
+--2025-12-01 02:54:16--  https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.11.0-debian10_amd64.deb
+Resolving www.tenable.com (www.tenable.com)... 104.16.48.5, 104.16.49.5, 2606:4700::6810:3105, ...
+Connecting to www.tenable.com (www.tenable.com)|104.16.48.5|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-debian-package]
+Saving to: ‘nessus.deb’
+
+nessus.deb                                               [<=>                                                                                                                   ]       0  --.-KB/s               nessus.deb                                               [ <=>                                                                                                                  ] 775.99K  3.77MB/s               nessus.deb                                               [  <=>                                                                                                                 ]   2.51M  6.25MB/s               nessus.deb                                               [   <=>                                                                                                                ]   4.28M  7.12MB/s               nessus.deb                                               [    <=>                                                                                                               ]   6.47M  8.02MB/s               nessus.deb                                               [     <=>                                                                                                              ]   8.67M  8.23MB/s               nessus.deb                                               [      <=>                                                                                                             ]  11.14M  8.87MB/s               nessus.deb                                               [       <=>                                                                                                            ]  13.52M  9.21MB/s               nessus.deb                                               [        <=>                                                                                                           ]  16.53M  9.90MB/s               nessus.deb                                               [         <=>                                                                                                          ]  18.93M  10.1MB/s               nessus.deb                                               [          <=>                                                                                                         ]  21.76M  10.4MB/s               nessus.deb                                               [           <=>                                                                                                        ]  24.24M  10.6MB/s               nessus.deb                                               [            <=>                                                                                                       ]  26.91M  10.7MB/s               nessus.deb                                               [             <=>                                                                                                      ]  29.08M  10.7MB/s               nessus.deb                                               [              <=>                                                                                                     ]  31.35M  10.7MB/s               nessus.deb                                               [               <=>                                                                                                    ]  34.70M  11.1MB/s               nessus.deb                                               [                <=>                                                                                                   ]  37.09M  11.5MB/s               nessus.deb                                               [                 <=>                                                                                                  ]  40.61M  12.2MB/s               nessus.deb                                               [                  <=>                                                                                                 ]  43.76M  12.6MB/s               nessus.deb                                               [                   <=>                                                                                                ]  47.67M  13.1MB/s               nessus.deb                                               [                    <=>                                                                                               ]  50.25M  13.2MB/s               nessus.deb                                               [                     <=>                                                                                              ]  53.34M  13.5MB/s               nessus.deb                                               [                      <=>                                                                                             ]  57.07M  14.0MB/s               nessus.deb                                               [                       <=>                                                                                            ]  60.00M  14.0MB/s               nessus.deb                                               [                        <=>                                                                                           ]  62.78M  14.1MB/s               nessus.deb                                               [                         <=>                                                                                          ]  64.53M  14.4MB/s    in 5.1s    
+
+2025-12-01 02:54:23 (12.8 MB/s) - ‘nessus.deb’ saved [67669874]
+
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hsudo dpkg -i nessus.deb
+sudo apt --fix-broken install[K
+[K[A[A[4C[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36md[36mp[36mk[36mg[39m [32m-[32mi[39m [1mn[1me[1ms[1ms[1mu[1ms[1m.[1md[1me[1mb[0m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ma[36mp[36mt[39m [32m-[32m-[32mf[32mi[32mx[32m-[32mb[32mr[32mo[32mk[32me[32mn[39m[1B[K[?1l>[?2004l
+[sudo] password for kali: 
+Selecting previously unselected package nessus.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 433914 files and directories currently installed.)
+Preparing to unpack nessus.deb ...
+Unpacking nessus (10.11.0) ...
+Setting up nessus (10.11.0) ...
+HMAC : (Module_Integrity) : Pass
+SHA1 : (KAT_Digest) : Pass
+SHA2 : (KAT_Digest) : Pass
+SHA3 : (KAT_Digest) : Pass
+TDES : (KAT_Cipher) : Pass
+AES_GCM : (KAT_Cipher) : Pass
+AES_ECB_Decrypt : (KAT_Cipher) : Pass
+RSA : (KAT_Signature) : RNG : (Continuous_RNG_Test) : Pass
+Pass
+ECDSA : (PCT_Signature) : Pass
+ECDSA : (PCT_Signature) : Pass
+DSA : (PCT_Signature) : Pass
+TLS13_KDF_EXTRACT : (KAT_KDF) : Pass
+TLS13_KDF_EXPAND : (KAT_KDF) : Pass
+TLS12_PRF : (KAT_KDF) : Pass
+PBKDF2 : (KAT_KDF) : Pass
+SSHKDF : (KAT_KDF) : Pass
+KBKDF : (KAT_KDF) : Pass
+HKDF : (KAT_KDF) : Pass
+SSKDF : (KAT_KDF) : Pass
+X963KDF : (KAT_KDF) : Pass
+X942KDF : (KAT_KDF) : Pass
+HASH : (DRBG) : Pass
+CTR : (DRBG) : Pass
+HMAC : (DRBG) : Pass
+DH : (KAT_KA) : Pass
+ECDH : (KAT_KA) : Pass
+RSA_Encrypt : (KAT_AsymmetricCipher) : Pass
+RSA_Decrypt : (KAT_AsymmetricCipher) : Pass
+RSA_Decrypt : (KAT_AsymmetricCipher) : Pass
+INSTALL PASSED
+Unpacking Nessus Scanner Core Components...
+
+ - You can start Nessus Scanner by typing /bin/systemctl start nessusd.service
+ - Then go to https://NESSUS_HOSTNAME_OR_IP:8834/ to configure your scanner
+
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 4%                            Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%                                Reading state information... 0%Reading state information... 0%                                Solving dependencies... 0%Solving dependencies... 10%                            The following packages were automatically installed and are no longer required:
+  amass-common             libdisplay-info2       libjs-jquery-ui     libplacebo349  libtheoraenc1   libx264-164            python3-kismetcapturebtgeiger         python3-protobuf    samba-ad-provision
+  gir1.2-girepository-2.0  libgdal37              libjs-underscore    libportmidi0   libudfread0     libyelp0               python3-kismetcapturefreaklabszigbee  python3-xlutils     samba-dsdb-modules
+  libarmadillo14           libgeos3.14.0          libmongoc-1.0-0t64  librav1e0.7    libwireshark18  python3-bluepy         python3-kismetcapturertl433           python3-xlwt
+  libbluray2               libgirepository-1.0-1  libnet1             libsqlcipher1  libwiretap15    python3-click-plugins  python3-kismetcapturertladsb          python3-zombie-imp
+  libbson-1.0-0t64         libinstpatch-1.0-2     libobjc-14-dev      libtheoradec1  libwsutil16     python3-gpg            python3-kismetcapturertlamr           samba-ad-dc
+Use 'sudo apt autoremove' to remove them.
+
+Summary:
+  Upgrading: 0, Installing: 0, Removing: 0, Not Upgrading: 177
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hsudo systemctl start nessusd
+sudo systemctl enable nessusd[K
+[K[A[A[4C[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ms[36my[36ms[36mt[36me[36mm[36mc[36mt[36ml[39m[1B[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ms[36my[36ms[36mt[36me[36mm[36mc[36mt[36ml[39m[1B[K[?1l>[?2004l
+Created symlink '/etc/systemd/system/multi-user.target.wants/nessusd.service' → '/usr/lib/systemd/system/nessusd.service'.
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hhttps://localhost:8834
+[K[A[4C[4mh[4mt[4mt[4mp[4ms[4m:[4m/[4m/[4ml[4mo[4mc[4ma[4ml[4mh[4mo[4ms[4mt[4m:[4m8[4m8[4m3[4m4[24m[1B[K[?1l>[?2004l
+zsh: no such file or directory: https://localhost:8834
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hsudo systemctl start nessusd[28D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ms[36my[36ms[36mt[36me[36mm[36mc[36mt[36ml[39m[14C
+[38;5;244msudo systemctl enable nessusd[39m[K
+[K[A[A[32C[1B[K[1B[K[A[A[32C[?1l>[?2004l[1B[sudo] password for kali: 
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hsudo systemctl status nessusd[29D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [36ms[36my[36ms[36mt[36me[36mm[36mc[36mt[36ml[39m[15C[?1l>[?2004l
+[?1h=[0;1;32m●[0m nessusd.service - The Nessus Vulnerability Scanner[m
+     Loaded: loaded (]8;;file://kali/usr/lib/systemd/system/nessusd.service\/usr/lib/systemd/system/nessusd.service]8;;\; [0;1;32menabled[0m; preset: [0;1;38:5:185mdisabled[0m)[m]8;;\
+     Active: [0;1;32mactive (running)[0m since Mon 2025-12-01 02:55:28 EST; 3h 29min ago[m
+ Invocation: 35e8d4a786d54dc89f55ac1cccfae07d[m
+   Main PID: 48496 (nessus-service)[m
+      Tasks: 15[0;38;5;245m (limit: 2105)[0m[m
+     Memory: 178.7M (peak: 199.1M)[m
+        CPU: 4min 43.102s[m
+     CGroup: /system.slice/nessusd.service[m
+             ├─[0;38;5;245m48496 /opt/nessus/sbin/nessus-service -q[0m[m
+             └─[0;38;5;245m48501 nessusd -q[0m[m
+[m
+Dec 01 02:55:28 kali systemd[1]: Started nessusd.service - The Nessus Vulnerability Scanner.[m
+Dec 01 02:55:28 kali nessus-service[48496]: nessus-service [48496][INFO] : Nessus 19.16.0 [build 20161] Started[m
+[K[?1l>                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004hping -c 4 google.com[20D[36mp[36mi[36mn[36mg[39m [32m-[32mc[39m[13C[?1l>[?2004l
+ping: google.com: Temporary failure in name resolution
+                                                                                                                                                                                                                   ]0;kali@kali: ~/goodshopping_enumeration
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/goodshopping_enumeration[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h

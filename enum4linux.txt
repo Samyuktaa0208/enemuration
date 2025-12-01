@@ -1,0 +1,29 @@
+Starting enum4linux v0.9.1 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Mon Dec  1 02:21:18 2025
+
+[34m =========================================( [0m[32mTarget Information[0m[34m )=========================================
+
+[0mTarget ........... www.goodshopping.com
+RID Range ........ 500-550,1000-1050
+Username ......... ''
+Password ......... ''
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+[34m ========================( [0m[32mEnumerating Workgroup/Domain on www.goodshopping.com[0m[34m )========================
+
+[0m[33m
+[E] [0m[31mCan't find workgroup/domain
+
+[0m
+
+[34m ============================( [0m[32mNbtstat Information for www.goodshopping.com[0m[34m )============================
+
+[0mLooking up status of 15.197.148.33
+No reply from 15.197.148.33
+
+[34m ===============================( [0m[32mSession Check on www.goodshopping.com[0m[34m )===============================
+
+[0m[33m
+[E] [0m[31mServer doesn't allow session using username '', password ''.  Aborting remainder of tests.
+
+[0m

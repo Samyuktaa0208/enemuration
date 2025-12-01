@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Mon Dec  1 02:04:52 2025 as: /usr/lib/nmap/nmap --privileged --script vuln -oA nmap_vuln www.goodshopping.com
+Host: 15.197.148.33 (a2aa9ff50de748dbe.awsglobalaccelerator.com)	Status: Up
+Host: 15.197.148.33 (a2aa9ff50de748dbe.awsglobalaccelerator.com)	Ports: 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (998)
+# Nmap done at Mon Dec  1 02:15:57 2025 -- 1 IP address (1 host up) scanned in 665.55 seconds

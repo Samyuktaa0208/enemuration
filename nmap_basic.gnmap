@@ -1,0 +1,4 @@
+# Nmap 7.95 scan initiated Mon Dec  1 01:53:19 2025 as: /usr/lib/nmap/nmap --privileged -sS -Pn -T4 -oA nmap_basic www.goodshopping.com
+Host: 3.33.130.190 (a2aa9ff50de748dbe.awsglobalaccelerator.com)	Status: Up
+Host: 3.33.130.190 (a2aa9ff50de748dbe.awsglobalaccelerator.com)	Ports: 80/open/tcp//http///, 81/open/tcp//hosts2-ns///, 443/open/tcp//https///	Ignored State: filtered (997)
+# Nmap done at Mon Dec  1 01:53:29 2025 -- 1 IP address (1 host up) scanned in 10.49 seconds
